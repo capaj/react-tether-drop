@@ -1,10 +1,12 @@
 {
   "name": "react-tether-drop",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "simple react wrapper for tether-drop",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "build": "babel index.js --out-dir dist -s",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
